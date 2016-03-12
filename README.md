@@ -1,5 +1,5 @@
-== README
+==README
 
-= For Employers
+=For Employers
 
-Basic website I made to show future employers my portfolio. 
+Basic website I made to show future employers my portfolio.
