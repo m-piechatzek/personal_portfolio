@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <title>Monika Piechatzek - Junior Full-Stack Developer Portfolio</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
+  <header id="main_navigation" class="clearfix">
+      <a href="#" class="name">Monika Piechatzek</a>
+        <nav>
+          <%= link_to "portfolio", posts_path %>
+          <a href="ux-ui.html">ux/ui</a>
+          <a href="#">resume</a>
+          <a href="contact.html">contact</a>
+        </nav>
+    </header>
 
 <%= yield %>
 
