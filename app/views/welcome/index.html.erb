@@ -1,0 +1,77 @@
+<div class="wrapper wrapper_padding clearfix">
+      <div class="col-1 about homepage_content">
+        <h2>about</h2>
+        <hr>
+        <p>
+          I'm a junior full-stack web developer living in
+          Vancouver, British Columbia.
+        </p>
+        <p>
+          I do a lot of coding in my free time and lately
+          have been open to the idea of working for a company
+          in order to expand my knowledge.
+        </p>
+        <p>
+          My story started out at <a href="#">Thompson Rivers University</a>
+          where I decided to take a science credit course, Intro to Programming,
+          for my Bachelor of Arts degree. I immediately realized
+          that this was something I should be doing instead. Now
+          web development is a passion of mine and I eventually
+          want to create successful iphone apps.
+        </p>
+      </div>
+      <div class="col-2 homepage_content">
+        <h2>formal education</h2>
+          <hr>
+        <h3>Thompson Rivers University</h3>
+        <p class="date">
+          Bachelor in Computing Science
+          September 2013 - Present
+        </p>
+        <h3>Codecode Web Development Bootcamp</h3>
+        <p class="date">
+          Certificate in Web Development
+          October 2015 - December 2015
+        </p>
+        <h3>British Columbia's Institute of Technology</h3>
+        <p class="date">
+          Applied Web Development Program
+          September 2014 - July 2015
+        </p>
+        <h3>Thompson Rivers University</h3>
+        <p class="date">
+          Bachelor in Arts, Major in Psychology
+          September 2007 - June 2014
+        </p>
+      </div>
+      <div class="col-3 homepage_content">
+        <h2>portfolio</h2>
+          <hr>
+          <% @posts.each do |post| %>
+          <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          <p class="date">
+          <%=  post.created_at.strftime("%A, %b %d") %>
+          </p>
+          <% end %>
+
+        <h3><a href="#">pin board</a></h3>
+        <p class="date">
+          Bachelor in Computing Science
+          September 2013 - Present
+        </p>
+        <h3><a href="#">hair stylist demo website</a></h3>
+        <p class="date">
+          Certificate in Web Development
+          October 2015 - December 2015
+        </p>
+        <h3><a href="#">ticket stopper</a></h3>
+        <p class="date">
+          Applied Web Development Program
+          September 2014 - July 2015
+        </p>
+        <h3><a href="#">drillr</a></h3>
+        <p class="date">
+
+        </p>
+      </div>
+    </div>

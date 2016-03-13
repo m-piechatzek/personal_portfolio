@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
   <title>Monika Piechatzek - Junior Full-Stack Developer Portfolio</title>
   <meta charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Monika Piechatzek</a>
+    <%= link_to "Monika Piechatzek", root_path, class: "name" %>
         <nav>
           <%= link_to "portfolio", posts_path %>
           <a href="ux-ui.html">ux/ui</a>
@@ -22,6 +23,18 @@
     </header>
 
 <%= yield %>
+
+<footer id="main_footer">
+    <p class="copyright">
+      &copy; 2016 Monika Piechatzek
+    </p>
+    <nav>
+
+    <a href="https://twitter.com/piechatzek_" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/monikapiechatzek" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/m-piechatzek" target="_blank"><i class="fa fa-github"></i></a>
+  </nav>
+  </footer>
 
 </body>
 </html>
