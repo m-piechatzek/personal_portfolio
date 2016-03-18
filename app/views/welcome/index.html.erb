@@ -1,3 +1,12 @@
+<header id="main_cover" class="clearfix u">
+  <%= link_to "Monika Piechatzek", root_path, class: "name" %>
+      <nav>
+        <%= link_to "portfolio", posts_path %>
+        <a href="ux-ui.html">ux/ui</a>
+        <a href="#">resume</a>
+        <a href="contact.html">contact</a>
+      </nav>
+  </header>
 <div class="wrapper wrapper_padding clearfix">
       <div class="col-1 about homepage_content">
         <h2>about</h2>
@@ -20,58 +29,172 @@
           want to create successful iphone apps.
         </p>
       </div>
-      <div class="col-2 homepage_content">
-        <h2>formal education</h2>
-          <hr>
-        <h3>Thompson Rivers University</h3>
-        <p class="date">
-          Bachelor in Computing Science
-          September 2013 - Present
-        </p>
-        <h3>Codecode Web Development Bootcamp</h3>
-        <p class="date">
-          Certificate in Web Development
-          October 2015 - December 2015
-        </p>
-        <h3>British Columbia's Institute of Technology</h3>
-        <p class="date">
-          Applied Web Development Program
-          September 2014 - July 2015
-        </p>
-        <h3>Thompson Rivers University</h3>
-        <p class="date">
-          Bachelor in Arts, Major in Psychology
-          September 2007 - June 2014
-        </p>
+        <div class="col-2 homepage_content">
+
+              <img src="<%= asset_path( 'mac.png' ) %>" alt="" />
+              <!-- <h2>formal education</h2>
+              <hr>
+              <h3>Thompson Rivers University</h3>
+              <p class="date">
+                Bachelor in Computing Science
+                September 2013 - Present
+              </p>
+              <h3>Codecode Web Development Bootcamp</h3>
+              <p class="date">
+                Certificate in Web Development
+                October 2015 - December 2015
+              </p>
+              <h3>British Columbia's Institute of Technology</h3>
+              <p class="date">
+                Applied Web Development Program
+                September 2014 - July 2015
+              </p>
+              <h3>Thompson Rivers University</h3>
+              <p class="date">
+                Bachelor in Arts, Major in Psychology
+                September 2007 - June 2014
+              </p> -->
+
+        </div>
       </div>
-      <div class="col-3 homepage_content">
-        <h2>portfolio</h2>
+
+
+
+
+    <div class="skills">
+      <div class="skills_banner">
+        <header>
+          <h2>Skill Set</h2>
           <hr>
-          <% @posts.each do |post| %>
-          <h3><a href="#"><%= link_to post.title, post %></a></h3>
           <p class="date">
-          <%=  post.created_at.strftime("%A, %b %d") %>
+            Languages, Frameworks & Programs that I've gotten along with
           </p>
-          <% end %>
+        </header>
+      </div>
+    </div>
 
-        <h3><a href="#">pin board</a></h3>
-        <p class="date">
-          Bachelor in Computing Science
-          September 2013 - Present
-        </p>
-        <h3><a href="#">hair stylist demo website</a></h3>
-        <p class="date">
-          Certificate in Web Development
-          October 2015 - December 2015
-        </p>
-        <h3><a href="#">ticket stopper</a></h3>
-        <p class="date">
-          Applied Web Development Program
-          September 2014 - July 2015
-        </p>
-        <h3><a href="#">drillr</a></h3>
-        <p class="date">
 
-        </p>
+    <div class="skills-images">
+      <h6>main sqaud</h6>
+      <div class="transitions-enabled centered clearfix masonry" id="mini-skills">
+
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'icon.javascript.png' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'icon-jquery.png' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'bootstrap-icon.png' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'rails-icon.png' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'ruby-icon.jpg' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'html-icon.png' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'css-icon.png' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'sql-icon.jpg' ) %>" alt="" />
+        <img class="skills-size box panel panel-default" src="<%= asset_path( 'github-icon.png' ) %>" alt="" />
+      </div>
+</div>
+      <div class="transitions-enabled" id="mini-skills">
+        <div class="skills-images">
+          <h6>aquaintances</h6>
+          <!-- <div class="box panel panel-default"> -->
+                  <!-- <div class="panel-body"> -->
+          <img class="skills-size box panel panel-default" src="<%= asset_path( 'ajax-icon.png' ) %>" alt="" />
+        <!-- </div> -->
+      <!-- </div> -->
+          <!-- <div class="box panel panel-default">
+                  <div class="panel-body"> -->
+          <img class="skills-size box panel panel-default" src="<%= asset_path( 'google-maps-icon.png' ) %>" alt="" />
+        <!-- </div>
+      </div> -->
+          <!-- <div class="box panel panel-default"> -->
+                  <!-- <div class="panel-body"> -->
+          <img class="skills-size box panel panel-default" src="<%= asset_path( 'php-icon.jpeg' ) %>" alt="" />
+        <!-- </div> -->
+      <!-- </div> -->
+          <!-- <div class="box panel panel-default"> -->
+                  <!-- <div class="panel-body"> -->
+          <img class="skills-size box panel panel-default" src="<%= asset_path( 'java-icon.png' ) %>" alt="" />
+        <!-- </div> -->
+      <!-- </div> -->
+          <!-- <div class="box panel panel-default"> -->
+                  <!-- <div class="panel-body"> -->
+          <img class="skills-size box panel panel-default" src="<%= asset_path( 'postgresql-icon.png' ) %>" alt="" />
+        <!-- </div> -->
+      <!-- </div> -->
+          <!-- <div class="box panel panel-default"> -->
+                  <!-- <div class="panel-body"> -->
+          <img class="skills-size box panel panel-default" src="<%= asset_path( 'heroku-icon.png' ) %>" alt="" />
+        <!-- </div> -->
+      <!-- </div> -->
+        </div>
+</div>
+
+
+
+
+    <div class="col-3 homepage_content">
+      <div class="skills_banner">
+        <header>
+          <h2>portfolio</h2>
+          <hr>
+            <p class="date">
+              some demo apps to prove i'm not lying
+            </p>
+        </header>
+      </div>
+
+<!-- <div class="image_link_shell"> -->
+<div class="transitions-enabled image_link" id="posts">
+
+      <% @posts.each do |post| %>
+      <!-- <div class="image_link"> -->
+<div class="box panel panel-default">
+
+
+        <div class="panel-body">
+            <%= image_tag post.image.url(:medium) %>
+
+            <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          </div>
+          </div>
+        <!-- </div> -->
+
+      <!-- <p class="date">
+        <%=  post.created_at.strftime("%A, %b %d") %>
+      </p> -->
+    <!-- </div> -->
+      <% end %>
+    </div>
+    <!-- </div> -->
+
+      <!-- <h3><a href="#">pin board</a></h3>
+      <p class="date">
+        Bachelor in Computing Science
+        September 2013 - Present
+      </p>-->
+      <!-- <h3><a href="#">hair stylist demo website</a></h3>
+      <p class="date">
+        Certificate in Web Development
+        October 2015 - December 2015
+      </p>
+      <h3><a href="#">ticket stopper</a></h3>
+      <p class="date">
+        Applied Web Development Program
+        September 2014 - July 2015
+      </p>
+      <h3><a href="#">drillr</a></h3>
+      <p class="date">
+
+      </p> -->
+
+
+
+    </div>
+
+    <div class="skills">
+      <div class="skills_banner">
+        <header>
+          <h2>Reviews</h2>
+          <hr>
+          <p class="date">
+            These are real people that i didn't force to say nice things about me
+          </p>
+        </header>
       </div>
     </div>

@@ -12,15 +12,9 @@
 
 </head>
 <body>
-  <header id="main_navigation" class="clearfix">
-    <%= link_to "Monika Piechatzek", root_path, class: "name" %>
-        <nav>
-          <%= link_to "portfolio", posts_path %>
-          <a href="ux-ui.html">ux/ui</a>
-          <a href="#">resume</a>
-          <a href="contact.html">contact</a>
-        </nav>
-    </header>
+<% unless current_page?(root_path)  %>
+<%= render 'layouts/cover' %>
+<% end %>
 
 <%= yield %>
 

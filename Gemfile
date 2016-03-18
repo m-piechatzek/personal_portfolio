@@ -24,7 +24,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
-
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'masonry-rails', '~> 0.2.4'
 
 
 # Use ActiveModel has_secure_password

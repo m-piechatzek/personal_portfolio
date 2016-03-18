@@ -3,7 +3,9 @@
   wrapper_padding">
     <header>
       <p class="date"><%= @post.created_at.strftime('%A, %B %d')%></p>
+
       <h2><%= @post.title %></h2>
+      <%= image_tag @post.image %>
       <hr>
     </header>
 
