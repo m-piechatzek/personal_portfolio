@@ -7,27 +7,27 @@
   background-size: cover;
   background-position: center;
   background-image: url(large.jpg);
-  .name {
-    font-weight: 700;
-    font-size: .8em;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    border: 2px solid $border;
-    padding: 1rem;
-    text-decoration: none;
-    color: $dark;
-    float: left;
-  }
-  nav {
-    float: right;
-    padding-top: 1.5rem;
-    a {
-      color: $dark;
+    .name {
+      font-weight: 700;
+      font-size: .8em;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      border: 2px solid $border;
+      padding: 1rem;
       text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1rem;
+      color: $dark;
+      float: left;
     }
-  }
+    nav {
+      float: right;
+      padding-top: 1.5rem;
+        a {
+          color: $dark;
+          text-decoration: none;
+          margin: 0 1rem;
+          font-size: 1rem;
+        }
+    }
 }
 
 
@@ -50,71 +50,76 @@
 
 
 
-  .skills_banner {
-    background-color: #F2F4F5;
-    padding: .8em 0 .5em 0;
-    header {
-      text-align: center;
-      .date {
-        font-size: .9em;
-        color: $light;
-        margin: 0 0 .6em 0;
+// SKILL SET BANNER
+.banners {
+  margin-bottom: 0;
+    .inside_banner {
+      background-color: #F2F4F5;
+      padding: .8em 0 .5em 0;
+        header {
+          text-align: center;
+            .date {
+              font-size: .9em;
+              color: $light;
+              margin: 0 0 .6em 0;
+            }
+            h2 {
+              font-size: 1.1rem;
+              text-transform: uppercase;
+            }
+            hr {
+              margin: 1em auto;
+            }
       }
-      h2 {
-        font-size: 1.1rem;
-        text-transform: uppercase;
-      }
-      hr {
-        margin: 1em auto;
-      }
-    }
-  }
-  .skills {
 
-    h6 {
-      text-align: center;
-    }
   }
-
-  .skills-images {
-    // width: 100%;
-// margin: 0 auto;
-  text-align: center;
-    .skills-size {
-      width: 75px;
-      height: 75px;
-         margin: 10px;
-    }
-  }
-.container {
-  margin: 0 auto;
 }
 
-  // margin-bottom: 50%;
-  .image_link {
-        width: 100%;
-      margin: 1em auto;
- .box {
-   margin: 10px;
- }
-}
-      .image {
-        // float: left;
-      }
 
+// SKILL SET
+.skill-set {
+  padding-top: 5%;
+  // background-image: url(mac.png);
+  background-color: black;
+  width: 100%;
+  height: 38em;
+  h6 {
+    text-align: center;
+    margin: 0 0 5% 0;
+  }
+  .skill {
+    color: $white;
+    border: 2px solid $highlight;
+    height: 30px;
+    width: 150px;
+    padding: 5px 5px;
+    text-align: center;
+    margin: 1em 2%;
+  }
+}
+
+
+// PORTFOLIOS
+.image_link {
+  width: 100%;
+  margin: 1em auto;
+    .box {
+      margin: 10px;
+    }
     h3 {
-      // float: left;
-      position: absolute;
-      margin: auto;
-       top: 0;
-       left:0;
-       right:0;
-       bottom:20%;
-       height:100px;
-    }
-  // }
+     position: absolute;
+     margin: auto;
+     top: 0;
+     left:0;
+     right:0;
+     bottom:20%;
+     height:100px;
+   }
+}
 
 
+
+// HOMEPAGE STUFF
   .homepage_content {
     overflow: hidden;
 

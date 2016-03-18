@@ -12,7 +12,11 @@ $ ->
     $('#mini-skills').masonry
       itemSelector: '.box'
       isFitWidth: true
-
+$ ->
+  $('#mini-skills2').imagesLoaded ->
+    $('#mini-skills2').masonry
+      itemSelector: '.box'
+      isFitWidth: true
 $ ->
   $('#masonry-container').masonry ->
     itemSelector: '.box'

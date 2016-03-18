@@ -61,8 +61,8 @@
 
 
 
-    <div class="skills">
-      <div class="skills_banner">
+    <div class="banners">
+      <div class="inside_banner">
         <header>
           <h2>Skill Set</h2>
           <hr>
@@ -73,122 +73,123 @@
       </div>
     </div>
 
+    <div class="skill-set">
+      <h6>main squad</h6>
+        <div class="transitions-enabled centered clearfix masonry" id="mini-skills">
+          <div class="skill box panel panel-default">
+            Javascript
+          </div>
 
-    <div class="skills-images">
-      <h6>main sqaud</h6>
-      <div class="transitions-enabled centered clearfix masonry" id="mini-skills">
-
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'icon.javascript.png' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'icon-jquery.png' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'bootstrap-icon.png' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'rails-icon.png' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'ruby-icon.jpg' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'html-icon.png' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'css-icon.png' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'sql-icon.jpg' ) %>" alt="" />
-        <img class="skills-size box panel panel-default" src="<%= asset_path( 'github-icon.png' ) %>" alt="" />
-      </div>
-</div>
-      <div class="transitions-enabled" id="mini-skills">
-        <div class="skills-images">
-          <h6>aquaintances</h6>
-          <!-- <div class="box panel panel-default"> -->
-                  <!-- <div class="panel-body"> -->
-          <img class="skills-size box panel panel-default" src="<%= asset_path( 'ajax-icon.png' ) %>" alt="" />
-        <!-- </div> -->
-      <!-- </div> -->
-          <!-- <div class="box panel panel-default">
-                  <div class="panel-body"> -->
-          <img class="skills-size box panel panel-default" src="<%= asset_path( 'google-maps-icon.png' ) %>" alt="" />
-        <!-- </div>
-      </div> -->
-          <!-- <div class="box panel panel-default"> -->
-                  <!-- <div class="panel-body"> -->
-          <img class="skills-size box panel panel-default" src="<%= asset_path( 'php-icon.jpeg' ) %>" alt="" />
-        <!-- </div> -->
-      <!-- </div> -->
-          <!-- <div class="box panel panel-default"> -->
-                  <!-- <div class="panel-body"> -->
-          <img class="skills-size box panel panel-default" src="<%= asset_path( 'java-icon.png' ) %>" alt="" />
-        <!-- </div> -->
-      <!-- </div> -->
-          <!-- <div class="box panel panel-default"> -->
-                  <!-- <div class="panel-body"> -->
-          <img class="skills-size box panel panel-default" src="<%= asset_path( 'postgresql-icon.png' ) %>" alt="" />
-        <!-- </div> -->
-      <!-- </div> -->
-          <!-- <div class="box panel panel-default"> -->
-                  <!-- <div class="panel-body"> -->
-          <img class="skills-size box panel panel-default" src="<%= asset_path( 'heroku-icon.png' ) %>" alt="" />
-        <!-- </div> -->
-      <!-- </div> -->
+        <div class="skill box panel panel-default">
+          HTML
         </div>
-</div>
 
+        <div class="skill box panel panel-default">
+          CSS
+        </div>
 
+        <div class="skill box panel panel-default">
+          Bootstrap
+        </div>
 
+        <div class="skill box panel panel-default">
+          Ruby
+        </div>
 
-    <div class="col-3 homepage_content">
-      <div class="skills_banner">
-        <header>
-          <h2>portfolio</h2>
-          <hr>
-            <p class="date">
-              some demo apps to prove i'm not lying
-            </p>
-        </header>
+        <div class="skill box panel panel-default">
+          Ruby on Rails
+        </div>
+
+        <div class="skill box panel panel-default">
+          SQL
+        </div>
+
+        <div class="skill box panel panel-default">
+          Github
+        </div>
       </div>
+    <h6>aquaintances</h6>
+      <div class="transitions-enabled centered clearfix masonry" id="mini-skills2">
 
-<!-- <div class="image_link_shell"> -->
-<div class="transitions-enabled image_link" id="posts">
+        <div class="skill box panel panel-default">
+          AJAX
+        </div>
 
-      <% @posts.each do |post| %>
-      <!-- <div class="image_link"> -->
-<div class="box panel panel-default">
+        <div class="skill box panel panel-default">
+          Google Maps API
+        </div>
+
+        <div class="skill box panel panel-default">
+          PHP
+        </div>
+
+        <div class="skill box panel panel-default">
+          Java
+        </div>
+
+        <div class="skill box panel panel-default">
+          Postgresql
+        </div>
+
+        <div class="skill box panel panel-default">
+          Heroku
+        </div>
+      </div>
+    </div>
 
 
+
+
+
+
+<div class="col-3 homepage_content">
+  <div class="banners">
+    <div class="inside_banner">
+      <header>
+        <h2>portfolio</h2>
+        <hr>
+          <p class="date">
+            some demo apps to prove i'm not lying
+          </p>
+      </header>
+    </div>
+  </div>
+
+  <div class="transitions-enabled image_link" id="posts">
+    <% @posts.each do |post| %>
+      <div class="box panel panel-default">
         <div class="panel-body">
             <%= image_tag post.image.url(:medium) %>
-
             <h3><a href="#"><%= link_to post.title, post %></a></h3>
-          </div>
-          </div>
-        <!-- </div> -->
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<!-- </div> -->
 
-      <!-- <p class="date">
-        <%=  post.created_at.strftime("%A, %b %d") %>
-      </p> -->
-    <!-- </div> -->
-      <% end %>
-    </div>
-    <!-- </div> -->
+<!-- <h3><a href="#">pin board</a></h3>
+<p class="date">
+Bachelor in Computing Science
+September 2013 - Present
+</p>-->
+<!-- <h3><a href="#">hair stylist demo website</a></h3>
+<p class="date">
+Certificate in Web Development
+October 2015 - December 2015
+</p>
+<h3><a href="#">ticket stopper</a></h3>
+<p class="date">
+Applied Web Development Program
+September 2014 - July 2015
+</p>
+<h3><a href="#">drillr</a></h3>
+<p class="date">
 
-      <!-- <h3><a href="#">pin board</a></h3>
-      <p class="date">
-        Bachelor in Computing Science
-        September 2013 - Present
-      </p>-->
-      <!-- <h3><a href="#">hair stylist demo website</a></h3>
-      <p class="date">
-        Certificate in Web Development
-        October 2015 - December 2015
-      </p>
-      <h3><a href="#">ticket stopper</a></h3>
-      <p class="date">
-        Applied Web Development Program
-        September 2014 - July 2015
-      </p>
-      <h3><a href="#">drillr</a></h3>
-      <p class="date">
+</p> -->
 
-      </p> -->
-
-
-
-    </div>
-
-    <div class="skills">
-      <div class="skills_banner">
+    <div class="banners">
+      <div class="inside_banner">
         <header>
           <h2>Reviews</h2>
           <hr>
