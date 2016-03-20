@@ -79,8 +79,8 @@
 // SKILL SET
 .skill-set {
   padding-top: 5%;
-  // background-image: url(mac.png);
-  background-color: black;
+  background-image: url(portfolio.png);
+  // background-color: black;
   width: 100%;
   height: 38em;
   h6 {
@@ -114,6 +114,7 @@
      right:0;
      bottom:20%;
      height:100px;
+    //  color: $white;
    }
 }
 
@@ -135,7 +136,7 @@
     }
     a {
       text-decoration: none;
-      color: $dark;
+      color: $white;
       &:hover {
         color: $highlight;
       }
@@ -147,6 +148,13 @@
     }
     p {
       margin: 0 0 .75em 0;
+    }
+    .brightness {
+      background-color: $white;
+      display: inline-block;
+      &:hover {
+        opacity: .5;
+      }
     }
   }
 

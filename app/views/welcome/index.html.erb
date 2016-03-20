@@ -1,5 +1,5 @@
 <header id="main_cover" class="clearfix u">
-  <%= link_to "Monika Piechatzek", root_path, class: "name" %>
+  <%= link_to "Monika Piechatzek", root_path, class: "name", method: :get %>
       <nav>
         <%= link_to "portfolio", posts_path %>
         <a href="ux-ui.html">ux/ui</a>
@@ -159,8 +159,10 @@
     <% @posts.each do |post| %>
       <div class="box panel panel-default">
         <div class="panel-body">
+            <div class="brightness">
             <%= image_tag post.image.url(:medium) %>
             <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          </div>
         </div>
       </div>
     <% end %>
