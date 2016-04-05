@@ -1,1 +1,27 @@
-<h1>:) index page</h1>
+
+<div class="col-3 homepage_content">
+  <div class="banners">
+    <div class="inside_banner">
+      <header>
+        <h2>portfolio</h2>
+        <hr>
+          <p class="date">
+            some demo apps to prove i'm not lying
+          </p>
+      </header>
+    </div>
+  </div>
+
+  <div class="transitions-enabled image_link" id="posts">
+    <% @posts.each do |post| %>
+      <div class="box panel panel-default">
+        <div class="panel-body">
+            <div class="brightness">
+            <%= image_tag post.image.url(:medium) %>
+            <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

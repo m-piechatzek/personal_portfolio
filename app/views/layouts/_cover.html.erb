@@ -2,8 +2,8 @@
   <header id="main_navigation" class="clearfix u">
     <%= link_to "Monika Piechatzek", root_path, class: "name", method: :get  %>
         <nav>
-          <%= link_to "portfolio", posts_path %>
-          <a href="ux-ui.html">ux/ui</a>
+          <%= link_to "portfolio", posts_path, method: :get   %>
+          <%#= link_to "ux/ui", uxs_path, method: :get  %>
           <%= link_to "resume", resumes_index_path %>
           <a href="contact.html">contact</a>
         </nav>

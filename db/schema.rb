@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160316201843) do
+ActiveRecord::Schema.define(version: 20160328012514) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -23,5 +23,14 @@ ActiveRecord::Schema.define(version: 20160316201843) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
   end
+
+  create_table "uxes", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "post_id"
+  end
+
+  add_index "uxes", ["post_id"], name: "index_uxes_on_post_id"
 
 end

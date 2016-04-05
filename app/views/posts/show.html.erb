@@ -5,6 +5,7 @@
       <p class="date"><%= @post.created_at.strftime('%A, %B %d')%></p>
 
       <h2><%= @post.title %></h2>
+      <hr>
       <%= image_tag @post.image %>
       <hr>
     </header>
@@ -27,7 +28,6 @@
     <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 
   </div>
-    <hr>
   </div>
   <%= link_to "home", root_path, method: :get %>
 

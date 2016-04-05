@@ -1,11 +1,14 @@
-<header id="main_cover" class="clearfix u">
+<header id="main_cover" class="clearfix u band" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
   <%= link_to "Monika Piechatzek", root_path, class: "name", method: :get %>
       <nav>
-        <%= link_to "portfolio", posts_path %>
-        <a href="ux-ui.html">ux/ui</a>
+        <%= link_to "portfolio", posts_path, method: :get   %>
+        <%#= link_to "ux/ui", uxs_path, method: :get   %>
         <%= link_to "resume", resumes_index_path %>
         <a href="contact.html">contact</a>
       </nav>
+      <div class="title" data-0="opacity: 1" data-180="opacity: 0">Junior Full-Stack Web Developer</div>
+
+
   </header>
 <div class="wrapper wrapper_padding clearfix">
       <div class="col-1 about homepage_content">
@@ -74,7 +77,7 @@
     </div>
 
     <div class="skill-set">
-      <h6>main squad</h6>
+      <h3>main squad</h3>
         <div class="transitions-enabled centered clearfix masonry" id="mini-skills">
           <div class="skill box panel panel-default">
             Javascript
@@ -108,7 +111,7 @@
           Github
         </div>
       </div>
-    <h6>aquaintances</h6>
+    <h3>aquaintances</h3>
       <div class="transitions-enabled centered clearfix masonry" id="mini-skills2">
 
         <div class="skill box panel panel-default">
@@ -200,4 +203,23 @@ September 2014 - July 2015
           </p>
         </header>
       </div>
+    </div>
+
+    <div class="quotes">
+
+          <blockquote cite="https://www.linkedin.com/in/monikapiechatzek?trk=nav_responsive_tab_profile_pic" class="block-one">
+        I had the pleasure of knowing Monika at CodeCore where we learn about web development for 9 weeks (12 hours per day and 5 days a week). Working with Monika on our exercises is always a delight because she has great ideas, smart and easy to get along with. Her passion on learning new things no matter how challenging it is will be her greatest asset in the team she will be part of. I wish her all the best in her future endeavours.
+      <p>
+        - Ivy Rubi-Olamit, Web Developer
+      </p>
+        </blockquote>
+
+        <blockquote cite="https://www.linkedin.com/in/monikapiechatzek?trk=nav_responsive_tab_profile_pic" class="block-two">
+          I worked with Monika during a group project at the CodeCore bootcamp.
+          <br> She was an integral asset to the front-end component of our project and has an excellent sense of design. I would love to work with her again in the future.
+          <p>
+            - Alex Taylor, Developer at Brewhouse.io
+          </p>
+        </blockquote>
+
     </div>

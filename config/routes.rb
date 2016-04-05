@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   get 'resumes/index'
 
+  resources :uxs
+  get 'uxs/index'
+
+
 
 
 

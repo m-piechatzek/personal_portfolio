@@ -1,0 +1,58 @@
+// Place all the styles related to the ux controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+blockquote{
+
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 2em 0 2em;
+  position: relative;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+
+// Size
+// width: 50%;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+
+}
+
+.block-one {
+  /*Borders - (Optional)*/
+  border-left: 15px solid $highlight;
+  border-right: 2px solid $highlight;
+}
+.block-two {
+  /*Borders - (Optional)*/
+  border-left: 15px solid $highlight;
+  border-right: 2px solid $highlight;
+  // float: right;
+
+}
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+
+}
+blockquote::after {
+  content: "";
+}
