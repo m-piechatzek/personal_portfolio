@@ -22,7 +22,7 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
 end
 
 def show
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
 end
 
 def edit
@@ -47,10 +47,10 @@ end
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :image)
+    params.require(:post).permit(:title, :content, :image, :slug)
   end
 
   def find_post
-      @post = Post.find(params[:id])
+      @post = Post.friendly.find(params[:id])
   end
 end

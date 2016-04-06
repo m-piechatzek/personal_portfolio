@@ -29,7 +29,7 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'skrollr-rails', '~> 0.6.29'
 gem 'rake'
-
+gem 'friendly_id', '~> 5.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

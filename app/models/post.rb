@@ -4,4 +4,8 @@ validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
   has_one :ux
 
+  extend FriendlyId
+ friendly_id :title, use: :slugged
+
+
 end
