@@ -228,5 +228,10 @@ September 2014 - July 2015
     </div>
 
     <script type="text/javascript">
-      skrollr.init();
+      skrollr.init({
+        mobileCheck: function() {
+         //hack - forces mobile version to be off
+         return true;
+     }
+      });
   </script>
