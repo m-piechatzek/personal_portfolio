@@ -1,4 +1,4 @@
-<header id="main_cover" class="clearfix u band" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
+<header id="skrollr-body" class="clearfix u band" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
   <div class="navbar-background" data-center-center="background-color: rgba(1,1,1,1);" >
 
   <%= link_to "Monika Piechatzek", root_path, class: "name", method: :get %>
@@ -228,10 +228,5 @@ September 2014 - July 2015
     </div>
 
     <script type="text/javascript">
-      skrollr.init({
-        mobileCheck: function() {
-         //hack - forces mobile version to be off
-         return true;
-     }
-      });
+      skrollr.init();
   </script>
