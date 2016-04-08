@@ -31,6 +31,7 @@ gem 'skrollr-rails', '~> 0.6.29'
 gem 'rake'
 gem 'friendly_id', '~> 5.1'
 gem 'aws-sdk', '< 2.0'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
